@@ -1,0 +1,15 @@
+export const ADD_INCOME = "ADD_INCOME";
+export const ADD_OUTCOME = "ADD_OUTCOME";
+export const UPDATE_INCOME = "UPDATE_INCOME";
+export const DELETE_INCOME = "DELETE_INCOME";
+
+export const UPDATE_OUTCOME = "UPDATE_INCOME";
+export const DELETE_OUTCOME = "DELETE_OUTCOME";
+
+export const ADD_CATEGORY = "ADD_CATEGORY";
+export const UPDATE_CATEGORY = "CHANGE_CATEGORY";
+export const DELETE_CATEGORY = "DELETE_CATEGORY";
+
+export const ADD_USER_INFO = "ADD_USER_INFO";
+export const CHANGE_USER_DATA = "CHANGE_USER_DATA";
+
