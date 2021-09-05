@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { ADD_OUTCOME } from "../../redux/types";
 import MainPanel from "../MainPanel/MainPanel";
@@ -82,7 +82,7 @@ function NewOutcome() {
                 onChange={(e) => {
                   setDate(e.target.value);
                 }}/> 
-              <a
+              <div
                 className="content__form-btn"
                 key="add-income-button" 
                 href=""
@@ -93,7 +93,7 @@ function NewOutcome() {
                   setCategory("food");
                   setDate(formattedDate());
                 }}> ADD NEW OUTCOME  
-              </a>
+              </div>
             </div>
               <Balance />
           </div>

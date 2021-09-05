@@ -7,10 +7,9 @@ const initialState = {
   incomes: incomes,
   outcomes: outcomes,
   balance: balance,
-  currInId: 1,
-  currOutId: 1,
+  currInId: 2,
+  currOutId: 4,
 }
-
 
 
 function addChargeReducer (state = initialState, action) {

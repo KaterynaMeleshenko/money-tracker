@@ -23,7 +23,7 @@ const GetDataForBars = () => {
   const initialData = useSelector(state => state.addChargeReducer.incomes);
     let categories = [];
     for (let i = 0; i < initialData.length; i++) {
-      if ( categories.indexOf(initialData[i].category) == -1) {
+      if ( categories.indexOf(initialData[i].category) === -1) {
         categories.push(initialData[i].category);
       }
     }
@@ -32,7 +32,7 @@ const GetDataForBars = () => {
   
     for (let i = 0; i < categories.length; i++) {
       let sum = 0;
-      let newCat = initialData.filter(obj => obj.category == categories[i]);
+      let newCat = initialData.filter(obj => obj.category === categories[i]);
       newCat.forEach(obj => sum = sum + parseInt(obj.sum)); 
       sums.push(sum);
     }

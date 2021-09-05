@@ -12,8 +12,9 @@ function Incomes() {
   
   const categories = useSelector(state => state.addCategoryReducer.categories);
 
-  function formattedMonth(date = new Date) {
+  function formattedMonth(date = new Date()) {
     let month = String(date.getMonth() + 1);
+    
     
     if (month.length < 2){
       month = '0' + month;

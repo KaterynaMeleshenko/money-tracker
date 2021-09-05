@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { DELETE_INCOME } from "../../redux/types";
 import btn_del from "../../img/btn_del.svg";

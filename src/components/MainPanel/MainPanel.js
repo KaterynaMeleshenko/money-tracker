@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import Footer from "../Footer/Footer";
 
 function MainPanel() {
   const { pathname } = useLocation();
@@ -18,29 +17,28 @@ function MainPanel() {
             to="/incomes" 
             isActive={() => ['/incomes', '/outcomes'].includes(pathname)}
             activeClassName={'selected_menu'}>
-            <i class="fas fa-home"/>
+            <i className="fas fa-home"/>
               Home
           </NavLink> 
         </li>
         <li className="menu__item">
           <NavLink to="/categories" activeClassName={'selected_menu'}>
-            <i class="fas fa-tasks"/>
+            <i className="fas fa-tasks"/>
               Categories
           </NavLink>
         </li>
         <li className="menu__item">
           <NavLink to="/statistics" activeClassName={'selected_menu'}>
-            <i class="fas fa-chart-line"/>
+            <i className="fas fa-chart-line"/>
               Statistics
           </NavLink>
         </li>
         <li className="menu__item menu__item-settings">
           <NavLink to="/settings" activeClassName={'selected_menu'}>
-            <i class="fas fa-users-cog"/>
+            <i className="fas fa-users-cog"/>
               Settings</NavLink>
         </li>
       </ul>
-      <Footer />
     </nav>
   )
 }

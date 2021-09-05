@@ -23,7 +23,7 @@ function UserInfo() {
       phone,
       photo,
       alarm, 
-      limit        
+      limit: parseInt(limit, 10)        
     }
   })
 
@@ -37,7 +37,7 @@ function UserInfo() {
                 <h2 className="content__form-title">User data</h2>
                   <input
                     className="content__form-input"
-                    key="name-input"
+                    key="user-name-input"
                     type="text"
                     placeholder="Name"
                     onChange={(e) => {
@@ -66,6 +66,7 @@ function UserInfo() {
                       class="custom-checkbox" 
                       id="limit" 
                       name="limit" 
+                      checked={alarm}
                       onChange={(e) => {
                         setAlarm(!alarm);
                       }}/>   
@@ -75,18 +76,18 @@ function UserInfo() {
                     className="content__form-input" 
                     key="limit-input"
                     type="number"
-                    placeholder="Limit"
+                    placeholder={userData.limit}
                     min="0"
                     onChange={(e) => {
                       setLimit(e.target.value);
                     }}/>
-                  <a 
+                  <div 
                     className="content__form-btn"
                     key="save-info-button" 
                     onClick={ () => {
                     dispatch(addUserInfoAction)
                   }}> ADD/CHANGE USER DATA 
-                  </a>
+                  </div>
               </div>
               <div className="user__img-wrapper">
                 <div className="user__img">

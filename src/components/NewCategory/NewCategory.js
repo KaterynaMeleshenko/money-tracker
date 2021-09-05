@@ -78,10 +78,9 @@ function NewCategory() {
                   {IconsOptions() }
 
                 </select>
-                <a
+                <div
                   className="content__form-btn"
                   key="add-income-button" 
-                  href=""
                   onClick={ () => {
                     dispatch(addCategoryAction);
                     setName("New category");
@@ -89,7 +88,7 @@ function NewCategory() {
                     setIcon("&#xf155;");
                     setDate(formattedDate())
                   }}> ADD NEW CATEGORY   
-                </a>
+                </div>
             </div>
             <Balance />
          </div> 
